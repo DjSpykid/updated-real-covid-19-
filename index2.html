@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleestimator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="firstSet">
+       <img src="logo.png" alt="COVID-19 image">
+       <h1>COVID-19</h1>
+       <h2>Estimator </h2>
+    </div>
+    <div class="container">
+        <div class="box1">  
+           <h1>Mild Case Scenario (Mild Impact)</h1>
+            <hr class="line">
+            <div class="mildcontent">
+             <h2>Currently Infected: 1,056</h2>
+             <h2>Infected People by Requested Time: 11,596</h2>
+             <h2>Severe Cases by Requested Time: 602</h2>
+             <h2>Available Hospital Beds by Requested Time: 6</h2>
+             <h2>Cases for ICU by Requested Time: 41</h2>
+             <h2>Cases for Ventilator by Requested Time: 51</h2>
+             <h2>Dollars in Flight: $25,000</h2>
+            </div>        
+        </div>
+        <div class="box2">
+            <h1>Worse Case Scenario (Severe Impact)</h1>
+            <hr class="line">
+            <div class="mildcontent">
+                <h2>Currently Infected: 20,056</h2>
+                <h2>Infected People by Requested Time: 98,596</h2>
+                <h2>Severe Cases by Requested Time: 10,602</h2>
+                <h2>Available Hospital Beds by Requested Time: -60</h2>
+                <h2>Cases for ICU by Requested Time: 2,241</h2>
+                <h2>Cases for Ventilator by Requested Time: 1,151</h2>
+                <h2>Dollars in Flight: $15,000,000</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="goBackButton" type="button">Go Back</button>
+
+
+    <script>
+        $('#goBackButton').click(function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

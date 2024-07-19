@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body> 
+    <div class="flex-container">
+        <div class="container1">
+            <img src="logo.png" alt="Covid-19 Logo">
+            <h1>COVID-19</h1>
+            <h2>Estimator</h2>
+            <h3>And the people stayed home...</h3>
+            <div class="todoList">
+                <ul>
+                    <li><h4>#StayHome</h4></li>
+                    <li><h4>#StayHome</h4></li>
+                    <li><h4>#StaySafe</h4></li>
+                    <li><h4>#WearMask</h4></li>
+                    <li><h4>#WashHands</h4></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="estimate-form box">
+                <h1>Estimate the impact of COVID-19</h1>   
+                <div class="estimatecont1">
+                    <h2>Your Region:</h2>
+                    <input type="text" id="user-region" placeholder="Africa">  
+                </div>
+                <div class="estimatecont2">
+                    <h2>Population of your Country:</h2>
+                    <input type="number" id="user-population" placeholder="e.g., 10512678">  
+                </div>
+                <div class="estimatecont3">
+                    <h2>Number of reported cases:</h2>
+                    <input type="number" id="user-cases" placeholder="e.g., 591">  
+                </div>
+                <div class="estimatecont4">
+                    <h2>Time to estimate for:</h2>
+                    <input class="days" type="number" id="user-days" placeholder="28"> 
+                    <input class="monthYear" type="number" id="user-month-year" placeholder="Day(s)">  
+                </div>
+                <div class="estimatecont5">
+                    <h2>Available hospital beds:</h2>
+                    <input type="number" id="user-beds" placeholder="e.g., 56789">  
+                </div>
+                <div class="btn">
+                    <button  id="estimatebutton" type="button">Estimate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+$('#estimatebutton').click(function() {
+            window.location.href = 'index2.html';
+});
+</script>
+
+</body>
+</html>
